@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+html {
+    /*background-color: rgb(246, 248, 250);*/
+    background-color: gainsboro;
+    color: #333333;
+}
+
+.main-title-wrapper {
+    text-align: center;
+}
+
+.main-title {
+    background-color: rgb(246, 248, 250);
+    text-align: center;
+    border-width: medium;
+    border-style: solid;
+    padding: 2rem;
+    margin: 3rem 10rem;
+    display: inline-block;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 0 50px 0;
+}
+
+.nav-list li {
+    margin-bottom: 20px;
+}
+
+.nav-list li a {
+    color: #333333;
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+    position: relative;
+}
+
+.nav-list li a:hover {
+    color: #333333
+}
+
+.nav-list li a::after {
+    background: #333333;
+    content: '';
+    transition: all .3s;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    transition: all .3s;
+    transform: scale(0, 1);
+    transform-origin: center top;
+}
+
+.nav-list li a:hover::after {
+    transform: scale(1, 1);
+}
+
+.topic {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+.sub-topic {
+    margin: 0;
+}
+
+p {
+    margin-left: 2rem;
+    line-height: 1.7;
+}
+
+.application-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+
+.application-card {
+    background-color: rgb(246, 248, 250);
+    width: 240px;
+    height: auto;
+    border-color: #333333;
+    border-width: 3px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.application-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+}
+
+.application-card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.application-card-img img {
+    width: 90%;
+    height: auto;
+}
+
+.application-card-content {
+    width: 100%;
+    height: auto;
+    padding: 20px 18px;
+    box-sizing: border-box;
+}
+
+.application-card-content>*+* {
+    margin-top: 10px;
+}
+
+.application-link {
+    text-decoration: none;
+}
+
+.application-link,
+.application-link:hover,
+.application-link:visited {
+    color: inherit;
+}
+
+.application-card-title {
+    font-size: x-large;
+    font-weight: bold;
+    line-height: 125%;
+    margin-bottom: 10px;
+}
+
+.application-card-summary {
+    line-height: 150%;
+}
+
+.application-list .slick-slide {
+    margin: 0 10px;
+}
+
+.profile-content {
+    display: inline-block;
+    background-color: rgb(246, 248, 250);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-left: 3rem;
+}
+
+.skil-wrapper {
+    background-color: rgb(246, 248, 250);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.language-list,
+.skil-list {
+    list-style: circle;
+    padding-left: 1rem;
+}
+
+.language-list li,
+.skil-list li {
+    line-height: 1.7;
+}
+
+.skil-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.form-wrapper {
+    margin-left: 2rem;
+}
+
+.free-query-form {
+    margin-top: 2rem;
+}
+
+.free-query-form label {
+    vertical-align: top;
+}
+
+footer {
+    background-color: #333333;
+    color: rgb(246, 248, 250);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
