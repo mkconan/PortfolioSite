@@ -65,7 +65,7 @@ html {
     text-decoration: underline;
     text-underline-offset: 0.5rem;
     margin-top: 3rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 .sub-topic {
@@ -182,7 +182,7 @@ p {
 
 
 .form-wrapper {
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 .free-query-form {
